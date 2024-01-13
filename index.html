@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <label for="textInput">Enter Text:</label>
+    <input type="text" id="textInput" placeholder="Type something...">
+    <button onclick="sendData()">Send</button>
+
+    <script>
+        function sendData() {
+            // Get the input value
+            var inputValue = document.getElementById("textInput").value;
+
+            // Perform the server call (replace 'your-server-endpoint' with your actual server endpoint)
+            // In a real-world scenario, you might use technologies like AJAX or fetch to handle server communication.
+            // Here, we are just simulating a server call with a console log.
+            console.log("Sending data to server:", inputValue);
+
+            // You can add your server call logic here using AJAX or fetch.
+        }
+    </script>
+</body>
+</html>
